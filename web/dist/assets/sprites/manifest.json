@@ -1,0 +1,323 @@
+{
+  "version": 2,
+  "width": 256,
+  "height": 256,
+  "anchor": [
+    128,
+    236
+  ],
+  "displayWidth": 64,
+  "displayHeight": 64,
+  "displayAnchor": [
+    32,
+    59
+  ],
+  "characters": {
+    "player": {
+      "walk": {
+        "down": [
+          "player/down-walk-0.png",
+          "player/down-walk-1.png",
+          "player/down-walk-2.png",
+          "player/down-walk-3.png"
+        ],
+        "left": [
+          "player/left-walk-0.png",
+          "player/left-walk-1.png",
+          "player/left-walk-2.png",
+          "player/left-walk-3.png"
+        ],
+        "right": [
+          "player/right-walk-0.png",
+          "player/right-walk-1.png",
+          "player/right-walk-2.png",
+          "player/right-walk-3.png"
+        ],
+        "up": [
+          "player/up-walk-0.png",
+          "player/up-walk-1.png",
+          "player/up-walk-2.png",
+          "player/up-walk-3.png"
+        ]
+      },
+      "idle": {
+        "down": "player/down-idle.png",
+        "left": "player/left-idle.png",
+        "right": "player/right-idle.png",
+        "up": "player/up-idle.png"
+      }
+    },
+    "reina": {
+      "walk": {
+        "down": [
+          "reina/down-walk-0.png",
+          "reina/down-walk-1.png",
+          "reina/down-walk-2.png",
+          "reina/down-walk-3.png"
+        ],
+        "left": [
+          "reina/left-walk-0.png",
+          "reina/left-walk-1.png",
+          "reina/left-walk-2.png",
+          "reina/left-walk-3.png"
+        ],
+        "right": [
+          "reina/right-walk-0.png",
+          "reina/right-walk-1.png",
+          "reina/right-walk-2.png",
+          "reina/right-walk-3.png"
+        ],
+        "up": [
+          "reina/up-walk-0.png",
+          "reina/up-walk-1.png",
+          "reina/up-walk-2.png",
+          "reina/up-walk-3.png"
+        ]
+      },
+      "idle": {
+        "down": "reina/down-idle.png",
+        "left": "reina/left-idle.png",
+        "right": "reina/right-idle.png",
+        "up": "reina/up-idle.png"
+      }
+    },
+    "nao": {
+      "walk": {
+        "down": [
+          "nao/down-walk-0.png",
+          "nao/down-walk-1.png",
+          "nao/down-walk-2.png",
+          "nao/down-walk-3.png"
+        ],
+        "left": [
+          "nao/left-walk-0.png",
+          "nao/left-walk-1.png",
+          "nao/left-walk-2.png",
+          "nao/left-walk-3.png"
+        ],
+        "right": [
+          "nao/right-walk-0.png",
+          "nao/right-walk-1.png",
+          "nao/right-walk-2.png",
+          "nao/right-walk-3.png"
+        ],
+        "up": [
+          "nao/up-walk-0.png",
+          "nao/up-walk-1.png",
+          "nao/up-walk-2.png",
+          "nao/up-walk-3.png"
+        ]
+      },
+      "idle": {
+        "down": "nao/down-idle.png",
+        "left": "nao/left-idle.png",
+        "right": "nao/right-idle.png",
+        "up": "nao/up-idle.png"
+      }
+    },
+    "mika": {
+      "walk": {
+        "down": [
+          "mika/down-walk-0.png",
+          "mika/down-walk-1.png",
+          "mika/down-walk-2.png",
+          "mika/down-walk-3.png"
+        ],
+        "left": [
+          "mika/left-walk-0.png",
+          "mika/left-walk-1.png",
+          "mika/left-walk-2.png",
+          "mika/left-walk-3.png"
+        ],
+        "right": [
+          "mika/right-walk-0.png",
+          "mika/right-walk-1.png",
+          "mika/right-walk-2.png",
+          "mika/right-walk-3.png"
+        ],
+        "up": [
+          "mika/up-walk-0.png",
+          "mika/up-walk-1.png",
+          "mika/up-walk-2.png",
+          "mika/up-walk-3.png"
+        ]
+      },
+      "idle": {
+        "down": "mika/down-idle.png",
+        "left": "mika/left-idle.png",
+        "right": "mika/right-idle.png",
+        "up": "mika/up-idle.png"
+      }
+    },
+    "daichi": {
+      "walk": {
+        "down": [
+          "daichi/down-walk-0.png",
+          "daichi/down-walk-1.png",
+          "daichi/down-walk-2.png",
+          "daichi/down-walk-3.png"
+        ],
+        "left": [
+          "daichi/left-walk-0.png",
+          "daichi/left-walk-1.png",
+          "daichi/left-walk-2.png",
+          "daichi/left-walk-3.png"
+        ],
+        "right": [
+          "daichi/right-walk-0.png",
+          "daichi/right-walk-1.png",
+          "daichi/right-walk-2.png",
+          "daichi/right-walk-3.png"
+        ],
+        "up": [
+          "daichi/up-walk-0.png",
+          "daichi/up-walk-1.png",
+          "daichi/up-walk-2.png",
+          "daichi/up-walk-3.png"
+        ]
+      },
+      "idle": {
+        "down": "daichi/down-idle.png",
+        "left": "daichi/left-idle.png",
+        "right": "daichi/right-idle.png",
+        "up": "daichi/up-idle.png"
+      }
+    },
+    "sora": {
+      "walk": {
+        "down": [
+          "sora/down-walk-0.png",
+          "sora/down-walk-1.png",
+          "sora/down-walk-2.png",
+          "sora/down-walk-3.png"
+        ],
+        "left": [
+          "sora/left-walk-0.png",
+          "sora/left-walk-1.png",
+          "sora/left-walk-2.png",
+          "sora/left-walk-3.png"
+        ],
+        "right": [
+          "sora/right-walk-0.png",
+          "sora/right-walk-1.png",
+          "sora/right-walk-2.png",
+          "sora/right-walk-3.png"
+        ],
+        "up": [
+          "sora/up-walk-0.png",
+          "sora/up-walk-1.png",
+          "sora/up-walk-2.png",
+          "sora/up-walk-3.png"
+        ]
+      },
+      "idle": {
+        "down": "sora/down-idle.png",
+        "left": "sora/left-idle.png",
+        "right": "sora/right-idle.png",
+        "up": "sora/up-idle.png"
+      }
+    },
+    "yui": {
+      "walk": {
+        "down": [
+          "yui/down-walk-0.png",
+          "yui/down-walk-1.png",
+          "yui/down-walk-2.png",
+          "yui/down-walk-3.png"
+        ],
+        "left": [
+          "yui/left-walk-0.png",
+          "yui/left-walk-1.png",
+          "yui/left-walk-2.png",
+          "yui/left-walk-3.png"
+        ],
+        "right": [
+          "yui/right-walk-0.png",
+          "yui/right-walk-1.png",
+          "yui/right-walk-2.png",
+          "yui/right-walk-3.png"
+        ],
+        "up": [
+          "yui/up-walk-0.png",
+          "yui/up-walk-1.png",
+          "yui/up-walk-2.png",
+          "yui/up-walk-3.png"
+        ]
+      },
+      "idle": {
+        "down": "yui/down-idle.png",
+        "left": "yui/left-idle.png",
+        "right": "yui/right-idle.png",
+        "up": "yui/up-idle.png"
+      }
+    },
+    "ren": {
+      "walk": {
+        "down": [
+          "ren/down-walk-0.png",
+          "ren/down-walk-1.png",
+          "ren/down-walk-2.png",
+          "ren/down-walk-3.png"
+        ],
+        "left": [
+          "ren/left-walk-0.png",
+          "ren/left-walk-1.png",
+          "ren/left-walk-2.png",
+          "ren/left-walk-3.png"
+        ],
+        "right": [
+          "ren/right-walk-0.png",
+          "ren/right-walk-1.png",
+          "ren/right-walk-2.png",
+          "ren/right-walk-3.png"
+        ],
+        "up": [
+          "ren/up-walk-0.png",
+          "ren/up-walk-1.png",
+          "ren/up-walk-2.png",
+          "ren/up-walk-3.png"
+        ]
+      },
+      "idle": {
+        "down": "ren/down-idle.png",
+        "left": "ren/left-idle.png",
+        "right": "ren/right-idle.png",
+        "up": "ren/up-idle.png"
+      }
+    },
+    "hayase": {
+      "walk": {
+        "down": [
+          "hayase/down-walk-0.png",
+          "hayase/down-walk-1.png",
+          "hayase/down-walk-2.png",
+          "hayase/down-walk-3.png"
+        ],
+        "left": [
+          "hayase/left-walk-0.png",
+          "hayase/left-walk-1.png",
+          "hayase/left-walk-2.png",
+          "hayase/left-walk-3.png"
+        ],
+        "right": [
+          "hayase/right-walk-0.png",
+          "hayase/right-walk-1.png",
+          "hayase/right-walk-2.png",
+          "hayase/right-walk-3.png"
+        ],
+        "up": [
+          "hayase/up-walk-0.png",
+          "hayase/up-walk-1.png",
+          "hayase/up-walk-2.png",
+          "hayase/up-walk-3.png"
+        ]
+      },
+      "idle": {
+        "down": "hayase/down-idle.png",
+        "left": "hayase/left-idle.png",
+        "right": "hayase/right-idle.png",
+        "up": "hayase/up-idle.png"
+      }
+    }
+  }
+}

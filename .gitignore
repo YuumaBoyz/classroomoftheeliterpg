@@ -1,0 +1,13 @@
+.DS_Store
+node_modules/
+.sauvegardes/
+.qa/
+.openai/
+.netlify/
+.env
+.env.*
+!.env.example
+*.log
+*.tgz
+*.tar.gz
+__pycache__/

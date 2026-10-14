@@ -1,0 +1,250 @@
+[
+  {
+    "asset": "web/dist/assets/environment-v4/academic-building.png",
+    "width": 1774,
+    "height": 887,
+    "sha256": "459a99f4182f41d3bd9f48ba1f0636bf49cf1b25b76c0f654f8a2feae51d3dc9",
+    "original": "exec-b692902e-1ffb-419c-bf58-5a94c4b6d51c.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/environment-v4/journal-paper.png",
+    "width": 1448,
+    "height": 1086,
+    "sha256": "ecb5c172cb70f20505709ca622f09461c071a962de0b6f74163639f50e62f2ff",
+    "original": "exec-afc79ccb-465a-4eb1-8fdb-21b8696357ef.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/environment-v4/reading-table.png",
+    "width": 2079,
+    "height": 756,
+    "sha256": "4d977cfa13cf8f9b71e9a5ae1c093d99ef025ca43a8f90af31926488c6e6b648",
+    "original": "exec-fc21690d-e967-40a4-9cee-8cbd2f0897bf.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/environment-v4/sakura.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "df5e8d65a376ff11f343ceac8f6d0f422e78223d6e8e1edacc43f5f235a1046a",
+    "original": "exec-f89dbcaf-552b-4198-a293-e565ebf7a86c.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/library-v5/book-stack.png",
+    "width": 1024,
+    "height": 1536,
+    "sha256": "f07205add73dddff4d52255d60bf2ea1c1ad80733afc3242d9ee0cb3bd589b7c",
+    "original": "exec-7cda5e75-3b24-4821-8a1c-248f4f12d04e.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/library-v5/library-building.png",
+    "width": 1636,
+    "height": 961,
+    "sha256": "10bc2db78fdb9c0e70a7ea194e0112317958128e3212da6e8c6a93dbe3c67609",
+    "original": "exec-9269444f-ac12-4d85-a788-151fbc141aa7.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/library-v5/library-props.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "89ad2c76748d05dd3f61e655b616b1fd0759ece4fc48341133c423584f8b7b7e",
+    "original": "exec-bbcbf127-51ae-42a5-9354-831102fd5ff9.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/library-v5/reading-chair.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "dc475149a37b14d546f5de4422cb620de5122236cc61026a951d429e04f9f841",
+    "original": "exec-199e90be-4196-457e-9db0-866f75421598.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/library-v5/reception-desk.png",
+    "width": 2089,
+    "height": 753,
+    "sha256": "8e1a2a3dc06f52eb1ca6202ce0053e47222240ee13bf7c075aa00c1e37712283",
+    "original": "exec-d78d4b87-b2d8-4ac4-8f57-5b7f5cade110.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/library-v5/room.png",
+    "width": 1484,
+    "height": 1060,
+    "sha256": "63a0c1908d5e5428db929b2314029eeb8fb297858b78821d8a7fccc33008ca35",
+    "original": "exec-3313c046-b8f6-414c-b95d-9e00d2ece1d6.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/library-v5/wall-bookcase.png",
+    "width": 2012,
+    "height": 782,
+    "sha256": "934faa16a9963ab5fc1be6a3a1fcd6909e09c7d094797fc7dd85658f9af97987",
+    "original": "exec-25d6f54c-d4ba-46b3-bf6c-44b78a83a4cb.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/exterior-v6/cafe.png",
+    "width": 1774,
+    "height": 887,
+    "sha256": "88358080417864465e0736f44dc8d7c3619cfb1e8ec83ef2671ddfb2f77da65e",
+    "original": "exec-8cf58370-f8e4-406a-bf22-15da2b50e136.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/exterior-v6/garden.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "18d28d645fc42b678c94208100bae50a797bff11f56d2b26cfcf83b9fd037b34",
+    "original": "exec-69047e99-0c08-4aea-811c-b70845e28a27.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/exterior-v6/gym.png",
+    "width": 1683,
+    "height": 935,
+    "sha256": "b3d10043f5c679fd598216ce564110fa88e369822f4340d6220920a6a76a9320",
+    "original": "exec-cd3cdad2-9833-4aa1-8c14-cda6fd74f8bd.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/exterior-v6/residence.png",
+    "width": 1727,
+    "height": 911,
+    "sha256": "2c711f0e47516771d318249cd8ad0d6403010f30e647b74726a08904066c567a",
+    "original": "exec-331f28a9-d4f9-40ad-a0ba-8c2b7eeba97c.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/exterior-v6/street.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "333a346be7dc9f5c4f6088d994c7d807284db592f185681ca2f697b0def48658",
+    "original": "exec-bc96ccc9-ad25-4478-bad8-806562128748.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/exterior-v6/terrain.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "b4261ece90bd4aa929e91a31e81af337fb8e581b413949b1f71f967c1aaa2150",
+    "original": "exec-61ebfd52-8369-4172-b68e-a18ab56a20a2.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/exterior-v6/trees.png",
+    "width": 1774,
+    "height": 887,
+    "sha256": "5d7d82ce772b10664d19d499cceac2a82c08803ed8278946184134deb4fdb4c6",
+    "original": "exec-03d275fb-a4b5-4a55-a128-50342f139c74.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/exterior-v6/water.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "a217a45a47988825a464972c87522bc98846ac8b70e827d095d3cf98b2ab91d8",
+    "original": "exec-707f8829-454a-4df4-a9af-86e48632a7fd.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/cafe-v7/banquette.png",
+    "width": 1122,
+    "height": 1402,
+    "sha256": "c3fb1670511ae7cab1e8cce3bd6814e4a2c6e0af42090f559f3210a39d342749",
+    "original": "exec-535b2bfd-d9bf-4c1c-991d-5bd89247d215.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/cafe-v7/counter.png",
+    "width": 2172,
+    "height": 724,
+    "sha256": "c18b319d222b66e666670e3921da18d8872ee5bff3b08e9bb923f26ea9bce710",
+    "original": "exec-c78b7388-fc0f-4af6-8276-6f714ac6697b.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/cafe-v7/props.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "9f4e3854055cf8f01a0484422a85da14a8ab8a3af292a57fbd686e9760871544",
+    "original": "exec-268499b4-636c-4706-92da-5f31f840af4e.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/cafe-v7/room.png",
+    "width": 1484,
+    "height": 1060,
+    "sha256": "ea7904dc58e0de3a697d7afceab8809a5f02dbddee47d06457cd2d956cf42687",
+    "original": "exec-85d8c6bd-f62b-49bd-957f-7968f925bbdf.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/cafe-v7/seating.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "ad6e93b9f0d7269d4d82abdddef58c29b2f39ab6bdff0497bee7cd0ede490862",
+    "original": "exec-7b426f03-1ff7-43ef-9457-ace9da811376.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/residence-v8/architecture.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "f778a1e16d9ce9f3c528028e9711979889bcbeb3006d53a0c369d2e02bb12f2d",
+    "original": "exec-1a68711a-c17c-45ad-8bd9-0e1ddb4b35b1.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/residence-v8/bedroom.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "17bb079c687bdc7e08cf3f5e39765357f3c8f0f217486cd0db809529e2cff160",
+    "original": "exec-b4107bb9-82e2-4ee4-8022-c293e0d15412.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/residence-v8/lounge.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "711e5bbfe52e8365ae71b1bfe9921d17898e30a0ff3589a9e2de16260eb494ac",
+    "original": "exec-6ef1fa60-a800-4438-aee5-e5dfed9cd66c.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/residence-v8/materials.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "bc9f245937d1544a2f612e7914aa03a4fa1b79e23078cda30b595fa87b570e7a",
+    "original": "exec-41e3090a-c8e5-41cc-a1bc-4e1161606650.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/residence-v8/utilities.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "0ecc589c3cf0fca2bef51600f86846ceef622b2d67f0d791487cf740c6e24868",
+    "original": "exec-2331b26e-65c6-451b-89b0-9696a9286243.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/residence-v9/interactions.png",
+    "width": 1774,
+    "height": 887,
+    "sha256": "de42cbedd00a5dbb0979ebab5e466aac9cd533215ce26262b3ad921506f9819b",
+    "original": "exec-a43992cb-7863-408f-b91d-705d34cddc7e.png",
+    "identical": true
+  },
+  {
+    "asset": "web/dist/assets/residence-v9/resting-bed.png",
+    "width": 1024,
+    "height": 1536,
+    "sha256": "49a43ee78ff8acee5ca44c5042fd9bde995c34855bc3b3878cc52df773ab8ec0",
+    "original": "exec-79eb6dc3-0806-48db-ad5e-d47fd79abf1a.png",
+    "identical": true
+  }
+]

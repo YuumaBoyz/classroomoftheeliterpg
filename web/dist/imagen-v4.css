@@ -1,0 +1,20 @@
+/* Original ImageGen paper surface. All text, tabs and controls remain live HTML. */
+.modal.journal-book{
+ border:0;
+ padding:40px 44px 38px clamp(46px,8vw,84px);
+ background:#e9e2cd url('assets/environment-v4/journal-paper.png') center/100% 100% no-repeat;
+ box-shadow:7px 9px 0 #15223166;
+ min-height:460px;
+}
+.journal-book::before{display:none}
+.journal-book .modal-head{border-bottom:1px solid #8f897a66}
+.journal-book .knowledge-card,.journal-book .journal-entry{border-bottom-color:#9d9d8255}
+.journal-book .hint-box{background:#c3c3a525;border-left-color:#8c9c80}
+.journal-book .tag{background:#d4d2b35c}
+@media(max-width:600px){.modal.journal-book{min-height:390px;padding:32px 22px 32px 13%}}
+@media(max-height:520px) and (min-width:601px){.modal.journal-book{min-height:0;padding:30px 35px 28px 84px}}
+
+/* Smooth native artwork and a scene-only GPU pass, below all interface layers. */
+#world,.minimap-wrap canvas,.map-plot canvas,.ios-plan canvas{image-rendering:auto}
+.scene-shaders{position:absolute;inset:0;display:block;width:100%;height:100%;pointer-events:none;image-rendering:auto}
+.vignette{box-shadow:none}

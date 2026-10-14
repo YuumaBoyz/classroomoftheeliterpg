@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#15232e">
+<meta name="description" content="ANHS — Les Règles Invisibles. Un RPG social 2D jouable dans votre navigateur."><title>ANHS — Les Règles Invisibles</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%238f263d'/%3E%3Ctext x='20' y='29' text-anchor='middle' font-family='sans-serif' font-size='28' fill='%23f5f0e6'%3ED%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="fonts.css"><link rel="stylesheet" href="game.css">
+<link rel="stylesheet" href="phone.css"><link rel="stylesheet" href="hud-v5.css?v=2"><link rel="stylesheet" href="imagen-v4.css?v=light-3"><link rel="stylesheet" href="interfaces-v5.css?v=4">
+<link rel="stylesheet" href="residence.css?v=doors-2">
+</head>
+<body>
+<main id="game" aria-label="ANHS, jeu de rôle">
+<canvas id="world" tabindex="0" aria-label="Monde du jeu. ZQSD, WASD ou flèches pour marcher. E pour interagir. M pour la carte. P pour le téléphone."></canvas>
+<div class="vignette" aria-hidden="true"></div><div id="fade" class="scene-fade"></div>
+<div id="hud" hidden>
+ <section class="hud-day panel-cut" aria-label="Calendrier">
+  <div class="slot-dial" role="img" id="slot-dial" aria-label="3 créneaux restants"><svg viewBox="0 0 64 64" aria-hidden="true"><circle class="dial-track" cx="32" cy="32" r="27"/><circle class="dial-slot" data-slot="0" cx="32" cy="32" r="27"/><circle class="dial-slot" data-slot="1" cx="32" cy="32" r="27"/><circle class="dial-slot" data-slot="2" cx="32" cy="32" r="27"/></svg><b id="hud-number">01</b></div>
+  <div class="day-text"><small class="hud-overline">ANHS <i>/</i> AVRIL</small><strong id="hud-day">Lundi</strong><span id="hud-time">Après les cours, 15:30</span><ol class="week-strip" id="week-strip" aria-label="Semaine"></ol><span id="action-count" class="action-count">3 créneaux disponibles</span></div>
+  <div class="day-seal" id="day-seal" aria-hidden="true"><span id="day-kanji">月</span></div>
+ </section>
+ <div class="hud-place" id="hud-place"><span id="location-tag">Exploration</span><b id="location-name">Le campus</b></div>
+ <section class="hud-wallet" aria-label="Points">
+  <button class="wallet-cell pc-cell" data-menu="rank" title="Classement · téléphone"><small>Classe D</small><b><span id="pc-value">600</span><i>PC</i></b><em id="pc-rank">4e</em></button>
+  <button class="wallet-cell pp-cell" data-menu="wallet" aria-label="Ouvrir le portefeuille" title="Portefeuille"><small>Points privés</small><b><span id="pp-value">60 000</span><i>PP</i></b><em id="pp-reserved" hidden></em></button>
+  <div class="wallet-tools"><button class="hud-icon" id="sound" title="Ambiance sonore" aria-label="Activer l’ambiance sonore"></button><button class="hud-icon pause-icon" data-menu="pause" title="Pause · Échap" aria-label="Pause"><span data-icon="pause"></span></button></div>
+ </section>
+ <button class="hud-conduct panel-cut" id="hud-conduct" data-menu="conduct" aria-label="Conduite de la classe"><span class="conduct-head"><span id="conduct-icon" data-icon="eyeoff"></span><span class="long">Conduite de la classe</span><span class="short">Conduite</span><b id="conduct-value">?</b></span><span class="conduct-gauge" aria-hidden="true"><i id="conduct-bar"></i><u style="left:40%"></u><u style="left:55%"></u><u style="left:70%"></u></span><small id="conduct-note">Les points bougent sans explication.</small></button>
+ <section class="hud-quest panel-cut" aria-label="Objectif">
+  <header class="quest-chapter"><span><i></i> EXAMEN SPÉCIAL / 01</span><button id="quest-toggle" aria-expanded="true" aria-controls="quest-body" aria-label="Réduire le suivi de mission">−</button></header>
+  <h1 id="quest-title">Le contrat de confiance</h1><div id="quest-body"><p id="quest-text">Trouvez un partenaire pour le premier examen.</p>
+  <ol id="quest-progress" class="quest-progress" aria-label="Progression de l’examen"></ol><div class="quest-actions"><button id="quest-route"><span data-icon="map"></span><span id="quest-destination">Bibliothèque</span><span>↗</span></button><button data-menu="exam" title="Règles de l’examen">Détails</button></div><div class="quest-requests" id="quest-requests"></div></div>
+ </section>
+ <div class="hud-states" id="hud-states" aria-label="États"></div>
+ <section class="hud-student panel-cut" aria-label="Votre élève">
+  <button class="student-plate" data-menu="profile" aria-label="Ouvrir votre profil" title="Votre profil · C"><span>D</span><small>1re ANNÉE</small></button>
+  <div class="student-body">
+   <div class="student-overline">DOSSIER D’ÉLÈVE <span>1re ANNÉE</span></div><div class="student-name"><b id="player-name">Akira</b><span id="rep-title">Élève discret</span></div>
+   <div class="vital" id="energy-meter" role="progressbar" aria-label="Énergie" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90"><svg class="energy-orbit" viewBox="0 0 88 88" aria-hidden="true"><circle class="energy-orbit-track" cx="44" cy="44" r="36"/><circle id="energy-orbit-fill" cx="44" cy="44" r="36"/></svg><span>Énergie</span><div class="vital-track"><i id="energy-bar"></i></div><b id="energy-label">90</b></div>
+   <div class="vital stress" id="stress-meter" role="progressbar" aria-label="Stress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="15"><span>Stress</span><div class="vital-track"><i id="stress-bar"></i></div><b id="stress-label">15</b></div>
+   <div class="rep-row" id="rep-row" title="Réputation dans la classe D"></div>
+  </div>
+ </section>
+ <section class="quick-inventory" aria-label="Objets rapides"><header>SAC <span>ACCÈS RAPIDE</span></header><div class="hud-bag" id="hud-bag" aria-label="Sac"></div></section>
+ <div class="minimap-wrap panel-cut"><header class="minimap-heading"><span><i></i> <span id="minimap-label">Campus</span></span><span>N ↑</span></header><canvas id="minimap" width="210" height="118" aria-label="Mini-carte"></canvas><button class="minimap-expand" data-menu="map">Plan du campus <kbd>M</kbd><span>↗</span></button></div>
+ <div class="movement-hints"><span><kbd>ZQSD</kbd> marcher</span><span><kbd>H</kbd> masquer le HUD</span><span><kbd>⇧</kbd> courir</span><span><kbd>E</kbd> interagir</span><span><kbd>1</kbd>–<kbd>4</kbd> sac</span></div>
+ <nav class="controls-hud" aria-label="Menus du jeu"><button data-menu="profile" aria-label="Profil · C" title="Profil · C"><span data-icon="user"></span><span>Élève</span><kbd>C</kbd></button><button data-menu="map" aria-label="Carte · M" title="Carte · M"><span data-icon="map"></span><span>Carte</span><kbd>M</kbd></button><button data-menu="phone" aria-label="Téléphone · P" title="Téléphone · P"><span data-icon="phone"></span><span>Téléphone</span><kbd>P</kbd><i id="message-dot" aria-hidden="true"></i></button><button data-menu="journal" aria-label="Carnet · J" title="Carnet · J"><span data-icon="book"></span><span>Carnet</span><kbd>J</kbd></button><button data-menu="pause" aria-label="Menu · Échap" title="Menu · Échap"><span data-icon="pause"></span><span>Menu</span><kbd>Échap</kbd></button></nav>
+ <div id="interaction" class="interaction" hidden><kbd>E</kbd><div><b id="interaction-title"></b><small id="interaction-detail"></small></div></div>
+ <div class="touch-pad"><button data-direction="up" aria-label="Haut">↑</button><button data-direction="left" aria-label="Gauche">←</button><button data-direction="down" aria-label="Bas">↓</button><button data-direction="right" aria-label="Droite">→</button></div><button id="touch-interact" class="touch-interact" aria-label="Interagir">E</button>
+</div>
+<div id="title-screen" class="title-screen">
+ <div class="title-top"><span class="crest">D</span><span>ADVANCED NURTURING HIGH SCHOOL<br>PREMIÈRE ANNÉE / AVRIL</span></div>
+ <div class="title-main"><div class="title-kicker">CLASSROOM OF THE ELITE · RPG</div><h1>LES RÈGLES<br><em>INVISIBLES</em></h1><p>CHAPITRE 01 / LE CONTRAT DE CONFIANCE</p><div class="title-menu"><button id="continue" hidden>Continuer <span>01</span></button><button id="new-game">Nouvelle partie <span>02</span></button><button id="title-controls">Commandes <span>03</span></button></div></div>
+ <div class="title-bottom"><span>ANHS / FAN GAME · SCÉNARIO ORIGINAL</span><span>SAUVEGARDE AUTOMATIQUE <i>●</i> DÉMO SOLO</span></div>
+</div>
+<div id="modal" class="modal-backdrop" hidden></div>
+<div id="dialogue" class="dialogue-wrap" hidden></div>
+<div id="toast" role="status" aria-live="polite" class="toast"></div>
+<div id="day-transition" class="day-transition" hidden><div class="transition-seal" aria-hidden="true"></div><span>Une nouvelle journée</span><h2></h2><p></p><div class="transition-report" id="transition-report"></div></div>
+</main>
+<script type="module" src="app.mjs?v=residence-doors-13b"></script>
+</body></html>
